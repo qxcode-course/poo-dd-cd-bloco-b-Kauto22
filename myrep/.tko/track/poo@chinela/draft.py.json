@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-06_16-59-25",
+            "content": "class Chinela:\n    def __init__(self):\n        self.__tamanho: int = 0\n\n    def getTamanho(self):\n        return self.__tamanho\n    \n    def setTamnho(self, valor: int):\n        if valor > 50 or valor < 20:\n            print(\"Tamanho n\u00e3o existe\")\n            return \n        if valor % 2 == 1:\n            print(\"Falha, N\u00e3o existem tamanhos \u00edmpares\")\n            return\n        self.__tamanho = valor\n    \ndef main():\n    chinela = Chinela()\n\n    while chinela.getTamanho() == 0:\n        print(\"Digite seu tamano de chinela\")\n        tamanho = int(input())\n        chinela.setTamnho(tamanho)\n\n    print(\"Parab\u00e9ns, voc\u00ea comprou uma chinela tamanho\", chinela.getTamanho())",
+            "lines": "25"
+        }
+    ]
+}

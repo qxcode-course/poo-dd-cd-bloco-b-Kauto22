@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-07_15-54-53",
+            "content": "@@ -399,18 +399,16 @@\n  Camisa(\n-%22%22\n )%0A%0A    w\n@@ -436,17 +436,16 @@\n o() == %22\n- \n %22:%0A     \n@@ -635,12 +635,4 @@\n ))%0A%0A\n-main()%0A%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-10-07_15-59-34",
+            "content": "@@ -192,18 +192,18 @@\n lor != %22\n-pp\n+PP\n %22 or val\n@@ -209,17 +209,17 @@\n lor != %22\n-p\n+P\n %22 or val\n@@ -225,17 +225,17 @@\n lor != %22\n-m\n+M\n %22 or val\n@@ -241,17 +241,17 @@\n lor != %22\n-g\n+G\n %22 or val\n@@ -261,10 +261,10 @@\n != %22\n-gg\n+GG\n %22 or\n@@ -278,10 +278,10 @@\n != %22\n-xg\n+XG\n %22:%0A \n@@ -367,17 +367,16 @@\n manho)%0A%0A\n-%0A\n def main\n@@ -399,16 +399,18 @@\n  Camisa(\n+%22%22\n )%0A%0A    w\n@@ -438,16 +438,17 @@\n o() == %22\n+ \n %22:%0A     \n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-07_16-01-07",
+            "content": "@@ -511,16 +511,24 @@\n  input()\n+.upper()\n %0A       \n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-10-07_16-04-37",
+            "content": "@@ -485,16 +485,17 @@\n roupa%22)%0A\n+%0A\n         \n@@ -550,22 +550,8 @@\n nho)\n-%0A        break\n %0A%0A  \n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-10-07_16-05-57",
+            "content": "class Camisa:\n    def __init__(self):\n        self.__tamanho: str = \"\"\n\n    def getTamanho(self) -> str:\n        return self.__tamanho\n    \n    def SetTamanho(self, valor: str):\n        if valor != \"pp\" or valor != \"p\" or valor != \"m\" or valor != \"g\" or valor != \"gg\" or valor != \"xg\":\n            print(\"Tamanho inv\u00e1lido\")\n            return\n        print(self.__tamanho)\n\n\ndef main():\n    camisa = Camisa()\n\n    while camisa.getTamanho() == \"\":\n        print(\"Digite seu tamanho de roupa\")\n        tamanho = input()\n        camisa.SetTamanho(tamanho)\n        break\n\n    print(\"Parab\u00e9ns, voc\u00ea comprou uma roupa tamanho\", camisa.getTamanho())\n\nmain()\n\n",
+            "lines": "27"
+        }
+    ]
+}
