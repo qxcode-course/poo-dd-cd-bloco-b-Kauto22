@@ -66,7 +66,6 @@ class Notebook:
 
         while minutos > 0:
             if self.__bateria and self.__bateria.getCarga() > 0 and self.__carregador:
-                # Usando e carregando ao mesmo tempo
                 self.__bateria.carregar(self.__carregador.getPotencia(), 1)
                 self.__minutos_usados += 1
                 minutos -= 1
@@ -79,7 +78,6 @@ class Notebook:
                     self.__ligado = False
                     break
             elif self.__carregador:
-                # Apenas com carregador, notebook não gasta carga
                 self.__minutos_usados += minutos
                 minutos = 0
             else:
