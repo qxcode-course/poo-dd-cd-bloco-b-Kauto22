@@ -22,7 +22,12 @@
         },
         {
             "label": "2025-10-07_16-05-57",
-            "content": "class Camisa:\n    def __init__(self):\n        self.__tamanho: str = \"\"\n\n    def getTamanho(self) -> str:\n        return self.__tamanho\n    \n    def SetTamanho(self, valor: str):\n        if valor != \"pp\" or valor != \"p\" or valor != \"m\" or valor != \"g\" or valor != \"gg\" or valor != \"xg\":\n            print(\"Tamanho inv\u00e1lido\")\n            return\n        print(self.__tamanho)\n\n\ndef main():\n    camisa = Camisa()\n\n    while camisa.getTamanho() == \"\":\n        print(\"Digite seu tamanho de roupa\")\n        tamanho = input()\n        camisa.SetTamanho(tamanho)\n        break\n\n    print(\"Parab\u00e9ns, voc\u00ea comprou uma roupa tamanho\", camisa.getTamanho())\n\nmain()\n\n",
+            "content": "@@ -141,17 +141,17 @@\n     def \n-s\n+S\n etTamanh\n@@ -196,15 +196,14 @@\n != %22\n-PP%22 and\n+pp%22 or\n  val\n@@ -213,14 +213,13 @@\n != %22\n-P%22 and\n+p%22 or\n  val\n@@ -229,14 +229,13 @@\n != %22\n-M%22 and\n+m%22 or\n  val\n@@ -241,22 +241,21 @@\n lor != %22\n-G%22 and\n+g%22 or\n  valor !\n@@ -261,15 +261,14 @@\n != %22\n-GG%22 and\n+gg%22 or\n  val\n@@ -278,10 +278,10 @@\n != %22\n-XG\n+xg\n %22:%0A \n@@ -329,26 +329,27 @@\n     \n-else:%0A    \n+    return%0A\n         \n self\n@@ -336,32 +336,38 @@\n  return%0A        \n+print(\n self.__tamanho =\n@@ -368,16 +368,9 @@\n anho\n- = valor\n+)\n %0A%0A%0Ad\n@@ -514,16 +514,8 @@\n ut()\n-.upper()\n %0A   \n@@ -523,19 +523,16 @@\n     \n-if \n camisa.\n-s\n+S\n etTa\n@@ -549,22 +549,9 @@\n nho)\n- == True:%0A    \n+%0A\n     \n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-10-16_12-26-25",
+            "content": "class Camisa:\n    def __init__(self):\n        self.__tamanho: str = \"\"\n\n    def getTamanho(self) -> str:\n        return self.__tamanho\n    \n    def setTamanho(self, valor: str):\n        if valor != \"PP\" and valor != \"P\" and valor != \"M\" and valor != \"G\" and valor != \"GG\" and valor != \"XG\":\n            print(\"Tamanho inv\u00e1lido\")\n        else:\n            self.__tamanho = valor\n\n\ndef main():\n    camisa = Camisa()\n\n    while camisa.getTamanho() == \"\":\n        print(\"Digite seu tamanho de roupa\")\n        tamanho = input().upper()\n        if camisa.setTamanho(tamanho) == True:\n            break\n\n    print(\"Parab\u00e9ns, voc\u00ea comprou uma roupa tamanho\", camisa.getTamanho())\n\nmain()\n\n",
             "lines": "27"
         }
     ]

@@ -1,0 +1,149 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-26_13-46-35",
+            "content": "@@ -558,103 +558,8 @@\n alue\n-%0A%0A    def __str__(self):%0A        return (f%22%7Bself.__thickness%7D:%7Bself.__hardness%7D:%7Bself.__size%7D%22)\n %0A   \n@@ -844,110 +844,8 @@\n rue%0A\n-        %0A    def __str__(self):%0A        return (f%22calibre: %7Bself.__thickness%7D, grafite %7Bself.__tip%7D%22)%0A\n     \n@@ -1096,297 +1096,8 @@\n    %0A\n-def main():%0A    pencil = Pencil()%0A    while True:%0A        line = input()%0A        print(%22$%22 + line)%0A        args = line.split(%22 %22)%0A%0A        if args%5B0%5D == %22end%22:%0A            break%0A        elif args%5B0%5D == %22show%22:%0A            print(pencil)%0A        else:%0A            print(%22fail: comando invalido%22)\n+    \n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-10-26_13-53-04",
+            "content": "@@ -1325,9 +1325,8 @@\n cil(\n-1\n )%0A  \n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-10-26_13-54-23",
+            "content": "@@ -1321,17 +1321,17 @@\n  Pencil(\n-0\n+1\n )%0A    wh\n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-10-26_13-54-27",
+            "content": "@@ -1321,18 +1321,19 @@\n  Pencil(\n+0\n )%0A\n-\n     whil\n@@ -1468,25 +1468,16 @@\n   break%0A\n-        %0A\n         \n@@ -1500,16 +1500,16 @@\n %22show%22:%0A\n+\n         \n@@ -1530,114 +1530,8 @@\n il)%0A\n-%0A        elif args%5B0%5D == %22insert%22:%0A            pencil.insert(Lead(args%5B1%5D, str (args%5B2%5D, int(args%5B3%5D))))%0A%0A\n     \n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-10-26_13-57-06",
+            "content": "@@ -1642,79 +1642,8 @@\n ))))\n-%0A        %0A        elif args%5B0%5D == %22remove%22:%0A            pencil.remove()\n %0A%0A  \n",
+            "lines": "67"
+        },
+        {
+            "label": "2025-10-26_13-58-01",
+            "content": "@@ -1072,20 +1072,19 @@\n rafite: \n-Lead\n+str\n ):%0A     \n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-10-26_14-02-03",
+            "content": "@@ -357,20 +357,25 @@\n  def set\n-Size\n+Thickness\n (self, v\n@@ -380,18 +380,20 @@\n  value: \n-in\n+floa\n t):%0A    \n@@ -403,20 +403,25 @@\n  self.__\n-size\n+thickness\n  = value\n@@ -421,25 +421,24 @@\n = value%0A\n-%0A\n     def \n usagePer\n@@ -433,151 +433,134 @@\n def \n-usagePerSheet(self) -%3E int:%0A        gastos = %7B%221B%22: 1, %222B%22: 2, %223B%22: 3, %224B%22: 4, %226B%22: 6%7D%0A        return gastos%5Bself.__hardness%5D%0A    %0A        \n+setHardness(self, value: str):%0A        self.__hardness = value%0A    def setSize(self, value: int):%0A        self.__size = value%0A\n %0A   \n@@ -694,65 +694,10 @@\n self\n-, thickness: float):%0A        self.__thickness = thickness\n+):\n %0A   \n@@ -1105,14 +1105,10 @@\n tip \n-is not\n+==\n  Non\n@@ -1126,190 +1126,8 @@\n     \n-print(%22fail: ja existe grafite%22)%0A            return%0A        if grafite.getThickness() != self.__thickness:%0A            print(%22fail: calibre incompativel%22)%0A            return%0A        \n self\n@@ -1142,16 +1142,35 @@\n  grafite\n+%0A            return\n %0A%0A    de\n@@ -1285,39 +1285,8 @@\n urn%0A\n-        self.__tip = None%0A    %0A\n     \n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-10-26_14-12-30",
+            "content": "@@ -1740,85 +1740,8 @@\n    %0A\n-        elif args%5B0%5D == %22init%22:%0A            pencil = Pencil(float(args%5B1%5D))%0A%0A\n     \n",
+            "lines": "78"
+        },
+        {
+            "label": "2025-10-26_14-13-28",
+            "content": "@@ -2109,11 +2109,4 @@\n do%22)\n-%0Amain()\n",
+            "lines": "81"
+        },
+        {
+            "label": "2025-10-26_14-13-50",
+            "content": "@@ -1580,30 +1580,18 @@\n = Pencil\n- %7C None = None\n+()\n %0A    whi\n@@ -2106,15 +2106,14 @@\n alido%22)%0A\n-%0A\n main()\n",
+            "lines": "82"
+        },
+        {
+            "label": "2025-10-26_14-14-36",
+            "content": "@@ -1571,17 +1571,18 @@\n   pencil\n-:\n+ =\n  Pencil \n",
+            "lines": "83"
+        },
+        {
+            "label": "2025-10-26_14-15-04",
+            "content": "@@ -1567,26 +1567,25 @@\n :%0A    pencil\n- =\n+:\n  Pencil %7C No\n",
+            "lines": "83"
+        },
+        {
+            "label": "2025-10-26_14-15-27",
+            "content": "@@ -1571,17 +1571,18 @@\n   pencil\n-:\n+ =\n  Pencil \n",
+            "lines": "83"
+        },
+        {
+            "label": "2025-10-26_14-15-36",
+            "content": "@@ -1719,17 +1719,16 @@\n = %22end%22:\n-s\n %0A       \n",
+            "lines": "83"
+        },
+        {
+            "label": "2025-10-26_14-16-08",
+            "content": "@@ -1719,16 +1719,17 @@\n = %22end%22:\n+s\n %0A       \n",
+            "lines": "83"
+        },
+        {
+            "label": "2025-10-26_14-16-12",
+            "content": "@@ -1082,17 +1082,16 @@\n  grafite\n-:\n  %7Bself._\n",
+            "lines": "83"
+        },
+        {
+            "label": "2025-10-26_14-17-11",
+            "content": "@@ -1032,105 +1032,8 @@\n f):%0A\n-        if self.__tip == None:%0A            return(f%22calibre: %7Bself.__thickness%7D, grafite: Null%22)%0A\n     \n",
+            "lines": "83"
+        },
+        {
+            "label": "2025-10-26_14-18-19",
+            "content": "@@ -1118,17 +1118,17 @@\n rafite: \n-n\n+N\n ull%22)%0A  \n",
+            "lines": "85"
+        },
+        {
+            "label": "2025-10-26_14-18-28",
+            "content": "@@ -2055,19 +2055,19 @@\n rgs%5B1%5D, \n-int\n+str\n  (args%5B2\n@@ -2069,19 +2069,19 @@\n rgs%5B2%5D, \n-str\n+int\n (args%5B3%5D\n",
+            "lines": "85"
+        },
+        {
+            "label": "2025-10-26_14-19-28",
+            "content": "@@ -2050,27 +2050,21 @@\n ead(\n-float(\n args%5B1%5D\n-)\n , \n-str\n+int \n (arg\n@@ -2069,19 +2069,19 @@\n rgs%5B2%5D, \n-int\n+str\n (args%5B3%5D\n",
+            "lines": "85"
+        },
+        {
+            "label": "2025-10-26_14-20-03",
+            "content": "@@ -2031,18 +2031,22 @@\n     \n-grafite = \n+pencil.insert(\n Lead\n@@ -2062,16 +2062,20 @@\n gs%5B1%5D), \n+str(\n args%5B2%5D,\n@@ -2088,16 +2088,18 @@\n rgs%5B3%5D))\n+))\n %0A       \n",
+            "lines": "85"
+        },
+        {
+            "label": "2025-10-26_14-20-53",
+            "content": "@@ -2085,43 +2085,8 @@\n %5D))%0A\n-            pencil.insert(grafite)%0A\n     \n",
+            "lines": "85"
+        },
+        {
+            "label": "2025-10-26_14-21-45",
+            "content": "@@ -459,16 +459,17 @@\n    gasto\n+s\n  = %7B%221B%22\n@@ -529,16 +529,17 @@\n rn gasto\n+s\n %5Bself.__\n@@ -1642,478 +1642,8 @@\n    %0A\n-    def writePage(self):%0A        if self.__tip is None:%0A            print(%22fail: nao existe grafite%22)%0A            return%0A        %0A        gasto = self.__tip.usagePerSheet()%0A        size = self.__tip.getSize()%0A%0A        if size %3C 10:%0A            print(%22fail: tamanho insuficiente%22)%0A            return%0A        if size - gasto %3C 10:%0A            self.__tip.setSize = 10%0A            print(%22fail: folha incompleta%22)%0A            return%0A        self.__tip.setSize(size - gasto)%0A%0A\n     \n@@ -2129,73 +2129,8 @@\n    %0A\n-        elif args%5B0%5D == %22write%22:%0A            pencil.writePage()%0A%0A\n     \n",
+            "lines": "86"
+        },
+        {
+            "label": "2025-10-26_14-31-16",
+            "content": "@@ -601,17 +601,16 @@\n turn (f%22\n-%5B\n %7Bself.__\n@@ -651,17 +651,16 @@\n .__size%7D\n-%5D\n %22)%0A    %0A\n",
+            "lines": "106"
+        },
+        {
+            "label": "2025-10-26_14-31-46",
+            "content": "@@ -2028,36 +2028,32 @@\n (%22fail: \n-tamanho insuficiente\n+folha incompleta\n %22)%0A     \n",
+            "lines": "106"
+        },
+        {
+            "label": "2025-10-26_14-32-19",
+            "content": "@@ -2032,24 +2032,28 @@\n il: \n-folha incompleta\n+tamanho insuficiente\n %22)%0A \n",
+            "lines": "106"
+        },
+        {
+            "label": "2025-10-26_14-32-28",
+            "content": "@@ -1865,17 +1865,16 @@\n f size %3C\n-=\n  10:%0A   \n",
+            "lines": "106"
+        },
+        {
+            "label": "2025-10-26_14-32-53",
+            "content": "@@ -2002,12 +2002,13 @@\n Size\n-(\n+ = \n 10\n-)\n %0A   \n",
+            "lines": "106"
+        },
+        {
+            "label": "2025-10-26_14-33-40",
+            "content": "class Lead:\n    def __init__(self, thickness: float, hardness: str, size: int):\n        self.__thickness = thickness\n        self.__hardness = hardness\n        self.__size = size\n\n    def getThickness(self):\n        return self.__thickness\n    def getHardness(self):\n        return self.__hardness\n    def getSize(self):\n        return self.__size\n    \n    def setSize(self, value: int):\n        self.__size = value\n\n    def usagePerSheet(self) -> int:\n        gasto = {\"1B\": 1, \"2B\": 2, \"3B\": 3, \"4B\": 4, \"6B\": 6}\n        return gasto[self.__hardness]\n    \n        \n    def __str__(self):\n        return (f\"[{self.__thickness}:{self.__hardness}:{self.__size}]\")\n    \nclass Pencil:\n    def __init__(self, thickness: float):\n        self.__thickness = thickness\n        self.__tip: Lead | None = None\n\n    def getLead(self):\n        return self.__tip\n    def setLead(self, value: Lead):\n        self.__tip = value\n\n    def hasGrafite(self) -> bool:\n        if self.__tip != None:\n            return True\n        \n    def __str__(self):\n        if self.__tip == None:\n            return(f\"calibre: {self.__thickness}, grafite: null\")\n        return (f\"calibre: {self.__thickness}, grafite: {self.__tip}\")\n    \n    def insert(self, grafite: Lead):\n        if self.__tip is not None:\n            print(\"fail: ja existe grafite\")\n            return\n        if grafite.getThickness() != self.__thickness:\n            print(\"fail: calibre incompativel\")\n            return\n        self.__tip = grafite\n\n    def remove(self):\n        if self.__tip == None:\n            print(\"fail: nao existe grafite\")\n            return\n        self.__tip = None\n    \n    def writePage(self):\n        if self.__tip is None:\n            print(\"fail: nao existe grafite\")\n            return\n        \n        gasto = self.__tip.usagePerSheet()\n        size = self.__tip.getSize()\n\n        if size <= 10:\n            print(\"fail: tamanho insuficiente\")\n            return\n        if size - gasto < 10:\n            self.__tip.setSize(10)\n            print(\"fail: folha incompleta\")\n            return\n        self.__tip.setSize(size - gasto)\n\n        \ndef main():\n    pencil: Pencil | None = None\n    while True:\n        line = input()\n        print(\"$\" + line)\n        args = line.split(\" \")\n\n        if args[0] == \"end\":\n            break\n        \n        elif args[0] == \"init\":\n            pencil = Pencil(float(args[1]))\n\n        elif args[0] == \"show\":\n            print(pencil)\n\n        elif args[0] == \"insert\":\n            grafite = Lead(float(args[1]), args[2], int(args[3]))\n            pencil.insert(grafite)\n        \n        elif args[0] == \"write\":\n            pencil.writePage()\n\n        elif args[0] == \"remove\":\n            pencil.remove()\n\n        else:\n            print(\"fail: comando invalido\")\n\nmain()",
+            "lines": "106"
+        }
+    ]
+}

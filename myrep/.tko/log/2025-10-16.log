@@ -1,0 +1,3 @@
+2025-10-16 12:26:23, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-16 12:26:25, EXEC, v:1, k:poo@camisa, mode:LOCK, rate:0, size:27
+2025-10-16 12:26:27, MOVE, v:1, k:poo@camisa, mode:BACK

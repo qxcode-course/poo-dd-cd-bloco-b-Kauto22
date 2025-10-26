@@ -11,3 +11,9 @@
 2025-10-07 16:04:38, EXEC, v:1, k:poo@camisa, mode:FREE, size:27
 2025-10-07 16:05:56, MOVE, v:1, k:poo@camisa, mode:PICK
 2025-10-07 16:05:57, EXEC, v:1, k:poo@camisa, mode:FREE, size:27
+2025-10-07 16:46:35, MOVE, v:1, k:poo@camisa, mode:BACK
+2025-10-07 16:47:11, MOVE, v:1, k:poo@roupa, mode:DOWN
+2025-10-07 16:48:40, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-07 16:57:08, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-07 16:59:12, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-07 16:59:20, MOVE, v:1, k:poo@roupa, mode:PICK
